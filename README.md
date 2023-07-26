@@ -15,7 +15,7 @@ Source Code of ICDE'24 submitted paper "BOURNE: Bootstrapped Self-supervised Lea
 + tqdm==4.59.0
 
 ## Usage
-# Node Anomaly Detection
+### Node Anomaly Detection
 To train and evaluate on Cora:
 ```
 python train_node.py --dataset cora --layer_sizes 256 --epochs 500 --batch_size 2000 --lr 0.001 --alpha 1.0 --beta 0.4 --eval_rounds 200 --cudaID 0
@@ -29,7 +29,7 @@ To train and evaluate on BlogCatalog:
 python run.py --device cuda:0 --expid 3 --dataset cora --runs 5 --auc_test_rounds 256 --alpha 1.0 --beta 0.6
 ```
 
-# Edge Anomaly Detection
+### Edge Anomaly Detection
 To train and evaluate on Cora:
 ```
 python train_edge.py --dataset cora --layer_sizes 256 --epochs 500 --batch_size 2000 --lr 0.001 --alpha 1.0 --beta 0.4 --eval_rounds 200 --cudaID 0
