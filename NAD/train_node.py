@@ -30,7 +30,7 @@ parser.add_argument('--eval_rounds', type=int, default=180)
 parser.add_argument('--layer_sizes', nargs='+', type=int, required=True, default=256)
 parser.add_argument('--predictor_hidden_size', type=int, default=512)
 parser.add_argument('--num_neigh',type=int, default=4)
-parser.add_argument('--no_edge', type=bool, default=False)
+parser.add_argument('--no_edge', action='store_false')
 parser.add_argument('--sample', type=str, default='nei',
                     help='Choose a sampling strategy from \'rwr\' (random walk with restart)'
                          'or \'nei\' (neighbor sampling)')
